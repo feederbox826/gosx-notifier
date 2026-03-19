@@ -5,6 +5,10 @@ A [Go](http://golang.org) lib for sending desktop notifications to OSX Mountain 
 
 [![GoDoc](http://godoc.org/github.com/deckarep/gosx-notifier?status.png)](http://godoc.org/github.com/deckarep/gosx-notifier)
 
+Fork Addendum
+----
+This fork uses a signed terminal-notifier from [notifiarr](https://github.com/Notifiarr/notifiarr), licenced under the MIT License, built on previous work by [kermieisinthehouse](https://github.com/kermieisinthehouse/gosx-notifier)
+
 Update 4/3/2014
 ------
 On OSX 10.9 and above gosx-notifier now supports images and icons.
