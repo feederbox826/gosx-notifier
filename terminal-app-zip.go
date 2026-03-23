@@ -55,6 +55,10 @@ func installTerminalNotifier() error {
 	//if terminal-notifier.app already installed no-need to re-install
 	if exists(filepath.Join(rootPath, executablePath)) {
 		return nil
+	} else {
+		if err := os.MkdirAll(rootPath, 0755); err != nil {
+			return fmt.Errorf("could not create temp directory for terminal-notifier: %s", err)
+		}
 	}
 	buf := bytes.NewReader(terminalnotifier())
 	reader, err := zip.NewReader(buf, int64(buf.Len()))
